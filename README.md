@@ -24,12 +24,12 @@ CompareTraining-DNN-RNN-CNN+RNN.ipynb: This notebook compares the training perfo
 CompareTesting_DNN_RNN_CNN+RNN_Wav2Vec2.ipynb: This notebook compares the testing performance of all models including the Wav2Vec2.<br>
 
 # Preprocessing
-preprocessing-timit.ipynb: This notebook contains all the preprocessing steps performed on the TIMIT corpus before training the models.
+preprocessing-timit.ipynb: This notebook contains all the preprocessing steps performed on the TIMIT corpus before training the models. To save time we store the features, labels, test_features and test_labels in pickle files as preprocessing took time and compute resources. We imported these pickle files for training DNN, RNN, and CNN+RNN models.
 
 # Getting Started
 To get started with this project:<br>
 
 Clone the repository.<br>
 Run the preprocessing-timit.ipynb notebook to preprocess your data.<br>
-Choose a model notebook to run. Ensure you have the necessary dependencies installed.<br>
+Choose a model notebook to run. Ensure you have the necessary dependencies installed and file paths fixed.<br>
 Once the model is trained, you can use the CAPT.ipynb notebook for real-time pronunciation training.<br>
