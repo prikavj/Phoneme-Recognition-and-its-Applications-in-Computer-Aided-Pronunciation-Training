@@ -11,20 +11,23 @@ The repository is structured as follows:
 **Preprocessing:** Contains scripts for preprocessing the TIMIT dataset used in training the models.<br>
 
 # Code
-CAPT.ipynb: This is the main notebook for the CAPT application. It utilizes the trained models to provide real-time pronunciation training.<br>
-Lion.wav and Test-1.wav: These are sample audio files which you can use to test the CAPT application.
-Models<br>
+
+## Preprocessing
+preprocessing-timit.ipynb: This notebook contains all the preprocessing steps performed on the TIMIT corpus before training the models. To save time we store the features, labels, test_features and test_labels in pickle files as preprocessing took time and compute resources. We imported these pickle files for training DNN, RNN, and CNN+RNN models.
+
+## Models
 timit-dnn-phoneme-final.ipynb: This notebook contains the implementation of a Deep Neural Network (DNN) model for phoneme recognition.<br>
 timit-rnn-final.ipynb: This notebook contains the implementation of a Recurrent Neural Network (RNN) model for phoneme recognition.<br>
 timit-cnn-rnn-final.ipynb: This notebook includes the implementation of a combined Convolutional and Recurrent Neural Network (CNN+RNN) model for phoneme recognition.<br>
 wav2vec2-phoneme-timit-analysis.ipynb: This notebook contains the application of Facebook's Wav2Vec2 model for phoneme recognition.<br>
 
-# Performance Analysis
+## Performance Analysis
 CompareTraining-DNN-RNN-CNN+RNN.ipynb: This notebook compares the training performance of the DNN, RNN and CNN+RNN models.<br>
 CompareTesting_DNN_RNN_CNN+RNN_Wav2Vec2.ipynb: This notebook compares the testing performance of all models including the Wav2Vec2.<br>
 
-# Preprocessing
-preprocessing-timit.ipynb: This notebook contains all the preprocessing steps performed on the TIMIT corpus before training the models. To save time we store the features, labels, test_features and test_labels in pickle files as preprocessing took time and compute resources. We imported these pickle files for training DNN, RNN, and CNN+RNN models.
+## CAPT
+CAPT.ipynb: This is the main notebook for the CAPT application. It utilizes the trained models to provide real-time pronunciation training.<br>
+Lion.wav and Test-1.wav: These are sample audio files which you can use to test the CAPT application.
 
 # Getting Started
 To get started with this project:<br>
