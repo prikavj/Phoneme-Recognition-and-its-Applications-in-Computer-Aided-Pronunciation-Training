@@ -2,6 +2,10 @@
 
 This repository contains the implementation of various deep learning models for phoneme recognition, with applications to Computer-Aided Pronunciation Training (CAPT). Phoneme recognition is an essential task in speech and language technologies, playing a significant role in tasks like speech recognition, speaker identification, and pronunciation training.
 
+# Dataset
+
+Darpa TIMIT : https://academictorrents.com/details/34e2b78745138186976cbc27939b1b34d18bd5b3
+
 # Repository Structure
 The repository is structured as follows:
 
@@ -9,6 +13,7 @@ The repository is structured as follows:
 **Models:** This is where all model-related notebooks are stored. The models we experimented with include DNN, RNN, CNN+RNN and the more advanced Wav2Vec2.<br>
 **Performance Analysis:** Contains notebooks for analyzing and comparing the training and testing performance of the implemented models.<br>
 **Preprocessing:** Contains scripts for preprocessing the TIMIT dataset used in training the models.<br>
+
 
 # Code
 
@@ -35,4 +40,3 @@ To get started with this project:<br>
 Clone the repository.<br>
 Run the preprocessing-timit.ipynb notebook to preprocess your data.<br>
 Choose a model notebook to run. Ensure you have the necessary dependencies installed and file paths fixed.<br>
-Once the model is trained, you can use the CAPT.ipynb notebook for real-time pronunciation training.<br>
